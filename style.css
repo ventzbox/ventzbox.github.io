@@ -370,7 +370,7 @@ img {
 {
 width: 100%;
 color: #636363;;
-
+display: flex!important;
 margin-bottom: 40px;
 margin-top: 40px;
 padding-bottom: 20px;
