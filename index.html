@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+
+    <nav>
+        <div class="nav-top" id="navigator">
+            <div class="nav-center">
+                <div class="log">
+                    <a href="/">
+                        <img src="resources/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="main-menu">
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <span>меню</span>
+    </div>
+
+    <div class="video">
+        <video autoplay="" loop="" id="video-background"
+            poster="https://tdventz.ru/wp-content/webp-express/webp-images/uploads/2018/07/header-main-page-bg.jpg.webp"
+            muted="">
+            <source src="resources/vid1.mp4" type="video/mp4">
+            <source src="" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+        </video>
+
+        <div class="video-shadow">
+            <div>VENTZ</div>
+        </div>
+        <!-- мышка v -->
+
+        <div class="mouse-slide" id="mouse-slide" onclick="mouseSlider()">
+
+            <div class='scrolldown'>
+                <div class="chevrons">
+                    <div class='chevrondown'></div>
+                    <div class='chevrondown'></div>
+                </div>
+            </div>
+        </div>
+        <!-- мышка ^ -->
+
+    </div>
+
+
+
+    <script>
+        let menuToggle = document.querySelector('.menu-toggle')
+        menuToggle.onclick = function () {
+            menuToggle.classList.toggle('active')
+        }
+    </script>
+
+    <div class="main" id="main">
+        <!-- /* бренды v */ -->
+        <div class="slider" id="mouseSlide">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+
+        <!-- /* бренды ^ */ -->
+        <!--Наши преимущества v -->
+        <div class="advanteges">
+            <h2>Наши преимущества</h2>
+            <div class="web-4blocks">
+                <div class="ad-block">
+                    <div class="ad-incon"><img src="resources/ad_icon1.png" alt=""></div>
+                    <div class="ad-text">
+                        <h3>Индивидуальные решения</h3>
+                        <span>
+                            Наша команда - это специалисты, имеющие многолетний опыт в автоматизации систем вентиляции.
+                            Инженеры разработают щит управления под ваши задачи, а производственный отдел реализует этот
+                            проект точно в срок.
+                        </span>
+                    </div>
+                </div>
+                <div class="ad-block">
+                    <div class="ad-incon"><img src="resources/ad_icon2.png" alt=""></div>
+                    <div class="ad-text">
+                        <h3>Индивидуальные решения</h3>
+                        <span>
+                            Наша команда - это специалисты, имеющие многолетний опыт в автоматизации систем вентиляции.
+                            Инженеры разработают щит управления под ваши задачи, а производственный отдел реализует этот
+                            проект точно в срок.
+                        </span>
+                    </div>
+                </div>
+                <div class="ad-block">
+                    <div class="ad-incon"><img src="resources/ad_icon3.png" alt=""></div>
+                    <div class="ad-text">
+                        <h3>Индивидуальные решения</h3>
+                        <span>
+                            Наша команда - это специалисты, имеющие многолетний опыт в автоматизации систем вентиляции.
+                            Инженеры разработают щит управления под ваши задачи, а производственный отдел реализует этот
+                            проект точно в срок.
+                        </span>
+                    </div>
+                </div>
+                <div class="ad-block">
+                    <div class="ad-incon"><img src="resources/ad_icon4.png" alt=""></div>
+                    <div class="ad-text">
+                        <h3>Индивидуальные решения</h3>
+                        <span>
+                            Наша команда - это специалисты, имеющие многолетний опыт в автоматизации систем вентиляции.
+                            Инженеры разработают щит управления под ваши задачи, а производственный отдел реализует этот
+                            проект точно в срок.
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Наши преимущества ^ -->
+        <!-- Стоимость решений v-->
+        <div class="price">
+            <h2>Стоимость решений</h2>
+
+
+            <div class="container">
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+                <div class="cards">
+                    <label class="card" for="item-1" id="song-1">
+                        <!-- <img src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80" alt="song"> -->
+                        <img src="resources/pic1.png" alt="song">
+                    </label>
+                    <label class="card" for="item-2" id="song-2">
+                        <!-- <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="song"> -->
+                        <img src="resources/pic2.png" alt="song">
+                    </label>
+                    <label class="card" for="item-3" id="song-3">
+                        <!-- <img src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="song"> -->
+                        <img src="resources/pic3.png" alt="song">
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Стоимость решений ^-->
+
+
+        <!-- Выберите щит для управления: v-->
+        <div class="container-menu">
+            <h2>Выберите щит для управления</h2>
+            <div class="crsl">
+                <div class="left-menu">
+                    <div class="polzunok" id="polzunok"></div>
+                    <div class="menu-variant" onclick="changeMenuItem(0)">
+                        <label class="menu-label m1" for="Вентиляторами ПДВ (Вытяжными)">Вентиляторами ПДВ
+                            (Вытяжными)</label>
+                    </div>
+                    <div class="menu-variant" onclick="changeMenuItem(1)">
+                        <label class="menu-label m2" for="">Вентиляторами ПДВ (Приточными)</label>
+                    </div>
+                    <div class="menu-variant" onclick="changeMenuItem(2)">
+                        <label class="menu-label m3" for="">Системами ПДВ с электронагревателем</label>
+                    </div>
+                    <div class="menu-variant" onclick="changeMenuItem(3)">
+                        <label class="menu-label m4" for="">Противопожарными клапанами</label>
+                    </div>
+                </div>
+                <div class="right-menu">
+                    <div class="menu-content">
+                        <div class="img"><img src="resources/item1.png" alt=""></div>
+                        <div class="text">
+                            <span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi recusandae quia
+                                repellendus iure voluptate asperiores laborum debitis omnis quos. Quidem, ducimus illum
+                                cumque eius deleniti optio, inventore cupiditate laboriosam nihil exercitationem
+                                reprehenderit unde dolorum minus nulla expedita earum vel iusto ab magni odit distinctio
+                                nemo aut tempore. Tempora consequatur incidunt inventore numquam magnam eaque
+                                laboriosam, beatae laudantium quis! Exercitationem, repellendus, corporis laudantium
+                                doloremque voluptatibus debitis earum iure modi maxime quibusdam adipisci libero commodi
+                                non totam! Rerum reiciendis ad necessitatibus consectetur fuga dignissimos perspiciatis
+                                delectus aliquid, ipsa eius non animi possimus optio repellat? Officiis quod iure nihil
+                                quibusdam, maxime a natus minima neque quisquam quidem dolores, ducimus atque.
+                                Voluptatibus, possimus nihil, eaque quis facere ipsa delectus nostrum tempore blanditiis
+                                deserunt eum placeat. Cum labore non mollitia qui reiciendis deserunt, quaerat aliquid
+                                ut veritatis corrupti esse provident aspernatur odit numquam suscipit nam! Debitis vel
+                                corrupti perspiciatis molestias id harum autem repellat, odit est aliquam ea doloremque
+                                iusto aperiam fugiat provident velit eos quos odio deserunt adipisci pariatur vitae
+                                cupiditate? Dolore adipisci aperiam optio soluta! Rem corrupti eveniet exercitationem,
+                                mollitia ad nesciunt aliquid ea dignissimos doloremque blanditiis. Fuga, aut possimus!
+                                Eius, expedita. Dolores necessitatibus voluptatibus consequuntur et est atque odio neque
+                                tempore quaerat.</span>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="img"><img src="resources/item2.png" alt=""></div>
+                        <div class="text">
+                            <span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi recusandae quia
+                                repellendus iure voluptate asperiores laborum debitis omnis quos. Quidem, ducimus illum
+                                cumque eius deleniti optio, inventore cupiditate laboriosam nihil exercitationem
+                                reprehenderit unde dolorum minus nulla expedita earum vel iusto ab magni odit distinctio
+                                nemo aut tempore. Tempora consequatur incidunt inventore numquam magnam eaque
+                                laboriosam, beatae laudantium quis! Exercitationem, repellendus, corporis laudantium
+                                doloremque voluptatibus debitis earum iure modi maxime quibusdam adipisci libero commodi
+                                non totam! Rerum reiciendis ad necessitatibus consectetur fuga dignissimos perspiciatis
+                                delectus aliquid, ipsa eius non animi possimus optio repellat? Officiis quod iure nihil
+                                quibusdam, maxime a natus minima neque quisquam quidem dolores, ducimus atque.
+                                Voluptatibus, possimus nihil, eaque quis facere ipsa delectus nostrum tempore blanditiis
+                                deserunt eum placeat. Cum labore non mollitia qui reiciendis deserunt, quaerat aliquid
+                                ut veritatis corrupti esse provident aspernatur odit numquam suscipit nam! Debitis vel
+                                corrupti perspiciatis molestias id harum autem repellat, odit est aliquam ea doloremque
+                                iusto aperiam fugiat provident velit eos quos odio deserunt adipisci pariatur vitae
+                                cupiditate? Dolore adipisci aperiam optio soluta! Rem corrupti eveniet exercitationem,
+                                mollitia ad nesciunt aliquid ea dignissimos doloremque blanditiis. Fuga, aut possimus!
+                                Eius, expedita. Dolores necessitatibus voluptatibus consequuntur et est atque odio neque
+                                tempore quaerat.</span>
+                        </div>
+
+                    </div>
+                    <div class="menu-content">
+                        <div class="img"><img src="resources/item3.png" alt=""></div>
+                        <div class="text">
+                            <span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi recusandae quia
+                                repellendus iure voluptate asperiores laborum debitis omnis quos. Quidem, ducimus illum
+                                cumque eius deleniti optio, inventore cupiditate laboriosam nihil exercitationem
+                                reprehenderit unde dolorum minus nulla expedita earum vel iusto ab magni odit distinctio
+                                nemo aut tempore. Tempora consequatur incidunt inventore numquam magnam eaque
+                                laboriosam, beatae laudantium quis! Exercitationem, repellendus, corporis laudantium
+                                doloremque voluptatibus debitis earum iure modi maxime quibusdam adipisci libero commodi
+                                non totam! Rerum reiciendis ad necessitatibus consectetur fuga dignissimos perspiciatis
+                                delectus aliquid, ipsa eius non animi possimus optio repellat? Officiis quod iure nihil
+                                quibusdam, maxime a natus minima neque quisquam quidem dolores, ducimus atque.
+                                Voluptatibus, possimus nihil, eaque quis facere ipsa delectus nostrum tempore blanditiis
+                                deserunt eum placeat. Cum labore non mollitia qui reiciendis deserunt, quaerat aliquid
+                                ut veritatis corrupti esse provident aspernatur odit numquam suscipit nam! Debitis vel
+                                corrupti perspiciatis molestias id harum autem repellat, odit est aliquam ea doloremque
+                                iusto aperiam fugiat provident velit eos quos odio deserunt adipisci pariatur vitae
+                                cupiditate? Dolore adipisci aperiam optio soluta! Rem corrupti eveniet exercitationem,
+                                mollitia ad nesciunt aliquid ea dignissimos doloremque blanditiis. Fuga, aut possimus!
+                                Eius, expedita. Dolores necessitatibus voluptatibus consequuntur et est atque odio neque
+                                tempore quaerat.</span>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="img"><img src="resources/item4.png" alt=""></div>
+                        <div class="text">
+                            <span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi recusandae quia
+                                repellendus iure voluptate asperiores laborum debitis omnis quos. Quidem, ducimus illum
+                                cumque eius deleniti optio, inventore cupiditate laboriosam nihil exercitationem
+                                reprehenderit unde dolorum minus nulla expedita earum vel iusto ab magni odit distinctio
+                                nemo aut tempore. Tempora consequatur incidunt inventore numquam magnam eaque
+                                laboriosam, beatae laudantium quis! Exercitationem, repellendus, corporis laudantium
+                                doloremque voluptatibus debitis earum iure modi maxime quibusdam adipisci libero commodi
+                                non totam! Rerum reiciendis ad necessitatibus consectetur fuga dignissimos perspiciatis
+                                delectus aliquid, ipsa eius non animi possimus optio repellat? Officiis quod iure nihil
+                                quibusdam, maxime a natus minima neque quisquam quidem dolores, ducimus atque.
+                                Voluptatibus, possimus nihil, eaque quis facere ipsa delectus nostrum tempore blanditiis
+                                deserunt eum placeat. Cum labore non mollitia qui reiciendis deserunt, quaerat aliquid
+                                ut veritatis corrupti esse provident aspernatur odit numquam suscipit nam! Debitis vel
+                                corrupti perspiciatis molestias id harum autem repellat, odit est aliquam ea doloremque
+                                iusto aperiam fugiat provident velit eos quos odio deserunt adipisci pariatur vitae
+                                cupiditate? Dolore adipisci aperiam optio soluta! Rem corrupti eveniet exercitationem,
+                                mollitia ad nesciunt aliquid ea dignissimos doloremque blanditiis. Fuga, aut possimus!
+                                Eius, expedita. Dolores necessitatibus voluptatibus consequuntur et est atque odio neque
+                                tempore quaerat.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Выберите щит для управления: ^-->
+
+
+<!-- Таблица -->
+<table class="table">
+    
+    <h3 class="tabel-h">Классификация щитов управления</h3>
+	
+    <tbody>
+		<tr>
+			<td>Вытяжные</td>
+			<td>DV-K</td>
+			<td>DV-P</td>
+			<td>-</td>
+			<td>DV-KCH</td>
+			<td>-</td>
+			<td>DV-FKS</td>
+		</tr>
+		<tr>
+			<td>Приточные</td>
+			<td>DP-K</td>
+			<td>DP-P</td>
+			<td>DP-CH</td>
+			<td>DP-KCH</td>
+			<td>DP-K-X</td>
+			<td>DP-FKS</td>
+		</tr>
+		<tr>
+			<td>Основные функции</td>
+			<td>Прямой пуск</td>
+			<td>Пуск звезда / треугольник</td>
+			<td>Част. преобразователь</td>
+			<td>Пожарный + нормальный режим</td>
+			<td>Подогрев воздуха</td>
+			<td>Воздушный клапан</td>
+		</tr>
+		</tbody>
+</table>
+<!-- Таблица -->
+
+
+        <!-- Этапы работы: ^-->
+
+        <div class="card-container">
+
+
+            <div class="card-p">
+                <h3 class="title">ЗАЯВКА</h3>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <span>
+                    Вы можете оставить заявку на сайте и с Вами свяжется наш специалист.
+                    Или позвонить нам по телефону:
+                    8(495) 151-16-55
+                    У нас Вы всегда можете получить полноценную консультацию профессионалов
+                </span>
+            </div>
+            <div class="card-p">
+                <h3 class="title">ЗАКАЗ</h3>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <span>
+                    Вы можете оставить заявку на сайте и с Вами свяжется наш специалист.
+                    Или позвонить нам по телефону:
+                    8(495) 151-16-55
+                    У нас Вы всегда можете получить полноценную консультацию профессионалов
+                </span>
+
+            </div>
+            <div class="card-p">
+                <h3 class="title">ОПЛАТА</h3>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <span>
+                    Вы можете оставить заявку на сайте и с Вами свяжется наш специалист.
+                    Или позвонить нам по телефону:
+                    8(495) 151-16-55
+                    У нас Вы всегда можете получить полноценную консультацию профессионалов
+                </span>
+
+            </div>
+            <div class="card-p">
+                <h3 class="title">ПРОИЗВОДСТВО</h3>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <span>
+                    Вы можете оставить заявку на сайте и с Вами свяжется наш специалист.
+                    Или позвонить нам по телефону:
+                    8(495) 151-16-55
+                    У нас Вы всегда можете получить полноценную консультацию профессионалов
+                </span>
+
+            </div>
+            <div class="card-p">
+                <h3 class="title">ТЕСТИРОВАНИЕ</h3>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <span>
+                    Вы можете оставить заявку на сайте и с Вами свяжется наш специалист.
+                    Или позвонить нам по телефону:
+                    8(495) 151-16-55
+                    У нас Вы всегда можете получить полноценную консультацию профессионалов
+                </span>
+            </div>
+            <div class="card-p">
+                <h3 class="title">ОТГРУЗКА</h3>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <span>
+                    Вы можете оставить заявку на сайте и с Вами свяжется наш специалист.
+                    Или позвонить нам по телефону:
+                    8(495) 151-16-55
+                    У нас Вы всегда можете получить полноценную консультацию профессионалов
+                </span>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <div class="footer">
+<div class="mapBox">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2247.510322611361!2d37.621742!3d55.714883!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b3ffea967d7%3A0xada8da08c15ccaab!2z0JvRjtGB0LjQvdC-0LLRgdC60LDRjyDRg9C7LiwgNzDRgTEsINCc0L7RgdC60LLQsCwgMTE1MTYy!5e0!3m2!1sru!2sru!4v1644499832428!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+ </div>
+
+
+    </div>
+
+
+    <script src="scripts/script.js"></script>
+
+
+
+</body>
+
+</html>
