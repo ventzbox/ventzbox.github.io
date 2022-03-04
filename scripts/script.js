@@ -52,13 +52,11 @@ function changeMenuItem(idItem){
    }
 }
 
-// $(window).scroll(function(){
-//     if ($(this).scrollTop() == 0) {
-//         navTop.style.background  = "transparent";
-//         console.log("верх")
-//     }
-//     else {
-//         navTop.style.background  = "#3a3a3a";
-//         console.log("неВерх")
-//     }
-//   });
+function togglePhone(){
+    
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active');
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active');
+    
+}
