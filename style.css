@@ -12,6 +12,7 @@
 .video{
     width: 99vw;
     height: 100vh;
+    min-width: 1340px;
 }
 #video-background{
     position:absolute;
@@ -25,12 +26,12 @@
     height: inherit;
     margin: 0 auto;
     object-fit: cover;
-    
+    min-width: 1340px;
 }
 .video-shadow div{
     font-size: 190px;
     color: #afaeae;
-    
+    min-width: 1340px;
 
 }
 .video-shadow{
@@ -47,7 +48,8 @@ align-items: center;
     z-index : 1;
    
     opacity : 0.6;
-    /*с шириной и высотой правда не помню что писать. Но в каком направлении копать думаю поняли*/
+
+    min-width: 1340px;
 }
 
 .main-menu{
