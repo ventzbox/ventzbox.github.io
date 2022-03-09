@@ -1367,3 +1367,34 @@ transform: translateX(-200%);
 transform: translateX(0%);
   }
 }
+@media (max-width: 1400px){
+  .main{
+    width: 100%;
+    left: 0;
+    /* min-width: 100%; */
+  }
+  .nav-top{
+    display: none;
+  }
+  #bg-sec{
+    display: none;
+  }
+  .video{
+ 
+    min-width: 100%;
+}
+#video-background{
+  
+    min-width: 100%;
+}
+.video-shadow div{
+  
+    min-width: 100%;
+
+}
+
+.video-shadow{
+  min-width: 100%;
+}
+
+}
