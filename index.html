@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    
+    
+    
+    <title>VentzBox</title>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
@@ -16,6 +19,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 <body>
     <div id="popup">
+      
         <h2>Оставьте заявку</h2>
         <p> Заполните поля формы и наши специалисты свяжутся с вами в ближайшее время.</p>
 
@@ -57,15 +61,31 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 
         <div class="main-menu">
-            <div class="menu-toggle">
+            <div class="menu-toggle" >
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <span>меню</span>
+            <div id="activemenu">
+                <div class="topics"><a href="./pages/contacts/index.html">Каталог</a></div>
+                <div class="topics"><a href="./pages/contacts/index.html">Контакты</a></div>
+                <div class="topics"><a href="./pages/contacts/index.html">О компании</a></div>
+                <div class="topics"><a href="./pages/contacts/index.html">Сертификаты</a></div>
+            </div>
+        
+        
         </div>
+  
 
-
+<script>
+    let manuActive = document.getElementById('activemenu')
+    let menuToggle = document.querySelector('.menu-toggle')
+    menuToggle.onclick = function () {
+        menuToggle.classList.toggle('active')
+        manuActive.classList.toggle('active')
+    }
+</script>
         <div class="video">
             <video autoplay="" loop="" id="video-background"
                 poster="https://tdventz.ru/wp-content/webp-express/webp-images/uploads/2018/07/header-main-page-bg.jpg.webp"
@@ -94,12 +114,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 
 
-        <script>
-            let menuToggle = document.querySelector('.menu-toggle')
-            menuToggle.onclick = function () {
-                menuToggle.classList.toggle('active')
-            }
-        </script>
+       
         <section id="bg-sec">
             <div class="row">
                 <div>
@@ -1249,15 +1264,50 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
                     <div class="cards">
                         <label class="card" for="item-1" id="song-1">
                             <!-- <img src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80" alt="song"> -->
-                            <img src="resources/pic1.png" alt="song">
+                            <!-- <img src="resources/pic1.png" alt="song"> -->
+                            <div class="price-list">
+                                <h3>БАЗОВЫЙ</h3>
+                                <span class="price-text">от 14900<i class="fas fa-ruble-sign"></i></span>
+                                <ul class="price-advant">
+                                    <li>Низкая стоимость</li>
+                                    <li>Релейно-контактная схема</li>
+                                    <li>Комплектующие Texenergo</li>
+                                    <li>Металлический корпус</li>
+                                    <li>Простота монтажа и обслуживания</li>
+                                    <li>Оперативность изготовления</li>
+                                </ul>
+                                <button class="btn-more" onclick="togglePhone()">Подробнее</button>
+                            </div>
                         </label>
                         <label class="card" for="item-2" id="song-2">
-                            <!-- <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="song"> -->
-                            <img src="resources/pic2.png" alt="song">
+                            <div class="price-list">
+                                <h3>БАЗОВЫЙ</h3>
+                                <span class="price-text">от 14900<i class="fas fa-ruble-sign"></i></span>
+                                <ul class="price-advant">
+                                    <li>Низкая стоимость</li>
+                                    <li>Релейно-контактная схема</li>
+                                    <li>Комплектующие Texenergo</li>
+                                    <li>Металлический корпус</li>
+                                    <li>Простота монтажа и обслуживания</li>
+                                    <li>Оперативность изготовления</li>
+                                </ul>
+                                <button class="btn-more" onclick="togglePhone()">Подробнее</button>
+                            </div>
                         </label>
                         <label class="card" for="item-3" id="song-3">
-                            <!-- <img src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="song"> -->
-                            <img src="resources/pic3.png" alt="song">
+                            <div class="price-list">
+                                <h3>БАЗОВЫЙ</h3>
+                                <span class="price-text">от 14900<i class="fas fa-ruble-sign"></i></span>
+                                <ul class="price-advant">
+                                    <li>Низкая стоимость</li>
+                                    <li>Релейно-контактная схема</li>
+                                    <li>Комплектующие Texenergo</li>
+                                    <li>Металлический корпус</li>
+                                    <li>Простота монтажа и обслуживания</li>
+                                    <li>Оперативность изготовления</li>
+                                </ul>
+                                <button class="btn-more" onclick="togglePhone()">Подробнее</button>
+                            </div>
                         </label>
                     </div>
 

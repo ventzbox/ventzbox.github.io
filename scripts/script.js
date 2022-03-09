@@ -60,3 +60,24 @@ function togglePhone(){
         popup.classList.toggle('active');
     
 }
+
+
+
+// function toggleMainMenu(){
+    
+//     var menu = document.getElementById('menu-active');
+//     menu.classList.toggle('active');
+   
+
+// }
+
+// $(window).scroll(function(){
+//     if ($(this).scrollTop() == 0) {
+//         navTop.style.background  = "transparent";
+//         console.log("верх")
+//     }
+//     else {
+//         navTop.style.background  = "#3a3a3a";
+//         console.log("неВерх")
+//     }
+//   });
