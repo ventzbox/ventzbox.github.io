@@ -652,7 +652,7 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 }
-.ad-block
+.advanteges-block
 {
     min-width: 200px;
     margin: auto;
@@ -664,15 +664,15 @@ align-items: center;
 
 
 }
-.ad-incon{    
+.adv-incon{    
   margin-right: 10px;
   padding-right : 10px;
     flex: 0 0 69px;
 }
-.ad-text span{
+.adv-text span{
     font-size: 18px;
 }
-.ad-text h3{
+.adv-text h3{
     font-size: 24px;
  color: rgb(193, 58, 44);
  margin-top: 10px;
