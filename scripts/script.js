@@ -6,11 +6,11 @@ window.onscroll = function () {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
     if (scrolled === 0) {
         navTop.style.background = "transparent";
-        console.log("верх")
+      
     }
     else {
         navTop.style.background = "#3a3a3a";
-        console.log("неВерх")
+       
     }
 }
 const main = document.getElementById('main');
