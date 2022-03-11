@@ -654,16 +654,14 @@ align-items: center;
 }
 .advanteges-block
 {
-    min-width: 200px;
-    margin: auto;
-    width: 40%;
-    display: flex;
-    
+min-width: 200px;
+margin: auto;
+width: 40%;
+display: flex;    
 justify-content: center;
 align-items: center;
-
-
 }
+
 .adv-incon{    
   margin-right: 10px;
   padding-right : 10px;
