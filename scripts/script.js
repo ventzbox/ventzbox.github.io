@@ -9,7 +9,7 @@ window.onscroll = function () {
       
     }
     else {
-        navTop.style.background = "#3a3a3a";
+        navTop.style.background = "#303030";
        
     }
 }
@@ -61,6 +61,32 @@ function togglePhone(){
     
 }
 
+function compPost(){
+    
+    var cCont = document.getElementById('container-complect');
+    cCont.classList.toggle('active');
+  
+}
+
+var sliderInputs =  document.getElementsByName('slider-sm');
+
+function nextSlide(){
+    // console.log("sadas")
+ for(var i = 0; i < sliderInputs.length; i++){
+    if(sliderInputs[i].checked){
+        sliderInputs[i==2?0:i+1].checked=true;
+        i=10;
+    }
+ }
+}
+function prevSlide(){
+    for(var i = 0; i < sliderInputs.length; i++){
+        if(sliderInputs[i].checked){
+            sliderInputs[i==0?2:i-1].checked=true;
+            i=10;
+        }
+     }
+}
 
 
 // function toggleMainMenu(){

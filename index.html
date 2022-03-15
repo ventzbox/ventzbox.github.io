@@ -71,7 +71,7 @@
                 <span></span>
                 <span></span>
             </div>
-            <span>меню</span>
+            <!-- <span>меню</span> -->
             <div id="activemenu">
                 <div class="topics"><a href="./pages/contacts/index.html">Каталог</a></div>
                 <div class="topics"><a href="./pages/contacts/index.html">Контакты</a></div>
@@ -1201,6 +1201,7 @@
             <div class="advanteges">
                 <h2>Наши преимущества</h2>
                 <div class="web-4blocks">
+                  
                     <div class="advanteges-block">
                         <div class="adv-incon"><img src="resources/ad_icon1.png" alt=""></div>
                         <div class="adv-text">
@@ -1263,9 +1264,13 @@
 
 
                 <div class="container">
-                    <input type="radio" name="slider" id="item-1" checked>
-                    <input type="radio" name="slider" id="item-2">
-                    <input type="radio" name="slider" id="item-3">
+                    <div class="way-arrows">
+                        <i class="fa-solid fa-angle-left"  onclick="prevSlide()"></i>
+                        <i class="fa-solid fa-angle-right" onclick="nextSlide()"></i>
+                    </div>
+                    <input type="radio" name="slider-sm" id="item-1" checked>
+                    <input type="radio" name="slider-sm" id="item-2">
+                    <input type="radio" name="slider-sm" id="item-3">
                     <div class="cards">
                         <label class="card" for="item-1" id="song-1">
                             <!-- <img src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80" alt="song"> -->
@@ -1286,7 +1291,7 @@
                         </label>
                         <label class="card" for="item-2" id="song-2">
                             <div class="price-list">
-                                <h3>БАЗОВЫЙ</h3>
+                                <h3>НЕ БАЗОВЫЙ</h3>
                                 <span class="price-text">от 14900<i class="fas fa-ruble-sign"></i></span>
                                 <ul class="price-advant">
                                     <li>Низкая стоимость</li>
@@ -1301,7 +1306,7 @@
                         </label>
                         <label class="card" for="item-3" id="song-3">
                             <div class="price-list">
-                                <h3>БАЗОВЫЙ</h3>
+                                <h3>Совсем не БАЗОВЫЙ</h3>
                                 <span class="price-text">от 14900<i class="fas fa-ruble-sign"></i></span>
                                 <ul class="price-advant">
                                     <li>Низкая стоимость</li>
@@ -1490,7 +1495,7 @@
                         <td>Основные функции</td>
                         <td>Прямой пуск</td>
                         <td>Пуск звезда / треугольник</td>
-                        <td>Част. преобразователь</td>
+                        <td>Част. преобр.</td>
                         <td>Пожарный + нормальный режим</td>
                         <td>Подогрев воздуха</td>
                         <td>Воздушный клапан</td>
@@ -1591,8 +1596,9 @@
 
             </div>
             <!-- Комплект поставки v  -->
-            <h2>Комплект поставки</h2>
-            <div class="container-complect">
+            <h2 onclick="compPost()">Комплект поставки</h2>
+            <div class="container-complect" id="container-complect">
+                <br>
                 <br>
                 <div class=card-compl>
                     <div class=image>
@@ -1644,7 +1650,7 @@
                 <div class="contacts-icons">
                     <!-- <span class="title-contacts" id="tc1">Адрес офиса</span>
                     <span class="text-contacts">улица Люсиновская дом 70, стр.1 </span> -->
-                    <span class="title-contacts" id="tc2">Адрес производства</span>
+                    <span class="title-contacts" id="tc2">Адрес офиса</span>
                     <span class="text-contacts">Подольск, улица Комсомольская, дом 1 </span>
                     <span class="title-contacts" id="tc3">График работы</span>
                     <span class="text-contacts">Пн. - Пт. 10:00 - 20:00 </span>
@@ -1659,6 +1665,7 @@
                 <div class="foot-center">
                     <div class="log">
                         <a class="fot-a" href="/">
+                            <img src="resources/logo.png" alt="">
                             <img src="resources/logo.png" alt="">
                             
                         </a>
