@@ -785,7 +785,7 @@ input[type=radio] {
       color: #fff;
       font-size: 24px;
       cursor: pointer;
-      width: 300px;
+      width: 80%;
       height: 60px;
       background: red;
       border-radius: 30px;
@@ -1522,17 +1522,17 @@ iframe{
     flex-direction: column;
   }
 .text-contacts{
-  font-size: 3vw;
-  line-height:3vw;
+  font-size: 4vw;
+  line-height:4vw;
 }
 .title-contacts{
-  font-size: 3vw;
-  line-height:3vw;
+  font-size: 4vw;
+  line-height:4vw;
 }
 .title-contacts:before {
   
-  font-size: 3vw;
-  line-height:3vw;
+  font-size: 4vw;
+  line-height:4vw;
 }
 }
 /* footer mapbox*/
@@ -1663,6 +1663,9 @@ transform: translateX(0%);
   }
   .nav-top{
     background: #303030;
+  }
+  #activemenu{
+    width: 100%;
   }
 #mouseSlide{
 margin-top: 75px;
