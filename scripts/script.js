@@ -4,6 +4,7 @@ const navTop = document.getElementById('navigator');
 
 window.onscroll = function () {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+   if(screen.width>900){
     if (scrolled === 0) {
         navTop.style.background = "transparent";
       
@@ -11,7 +12,7 @@ window.onscroll = function () {
     else {
         navTop.style.background = "#303030";
        
-    }
+    }}
 }
 const main = document.getElementById('main');
 // const mouseSlide = document.getElementById('mouseSlide');
