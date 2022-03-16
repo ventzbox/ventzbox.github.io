@@ -693,6 +693,7 @@ align-items: center;
 @media (max-width: 900px) {
   .advanteges-block
   {
+    margin-top: 15px;
   flex-direction: column; 
   width: 90%;
 }
