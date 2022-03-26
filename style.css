@@ -192,7 +192,7 @@ transform: translateX(60px);
   }
 .nav-top
 {
-    background-color: transparent;
+    /* background-color: transparent; */
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     position: fixed;
     left: 0;
