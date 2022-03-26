@@ -591,13 +591,25 @@ overflow: hidden;
 	.slide-track {
 		animation: scroll 40s linear infinite;
 		display: flex;
-		width: calc(250px * 14);
+    align-items: center;
+    justify-content: center;
+		width: calc(250px * 15);
 	}
 	
 	.slide {
 		height: 100px;
 		width: 250px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
 	}
+  /* .slide img{
+    height: 70px;
+		width: 200px;
+  margin-left: 25px;
+  margin-right: 25px;
+    margin: auto;
+  } */
 /* бренды ^ */
 
 
@@ -1395,12 +1407,12 @@ svg {
 
 .container-complect .card-compl {
   position: relative;
-  width : 260px;
+  width : 240px;
   max-width : 300px;
   height : 235px;  
   background-color : #fff;
   margin : 30px 10px;
-  padding : 20px 15px;
+  /* padding : 15px 10px; */
   
   display : flex;
   flex-direction : column;
@@ -1429,6 +1441,8 @@ svg {
 .container-complect .card-compl .image img {
   max-width : 100%;
   margin: auto;
+  width:185px;
+  height: 230px;
   margin-bottom: 10px;
   border-radius : 15px;
 }
@@ -1544,7 +1558,7 @@ svg {
   justify-content: space-around;
 }
 iframe{
-  width:40vw;
+  width:60vw;
   height:40vw;
   border:0;
   min-height:400px;
@@ -1696,7 +1710,7 @@ transform: translateX(-200%);
 transform: translateX(0%);
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
   .main{
     width: 90%;
 

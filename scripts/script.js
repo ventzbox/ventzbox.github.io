@@ -39,7 +39,17 @@ const polzunok = document.getElementById('polzunok');
 
 menuItem[0].classList.add('active-item');
 menuLabel[0].classList.add('active-label');
+
+
+var boxSliderId=0;
 function changeMenuItem(idItem){
+
+    if(boxSliderId!=idItem){
+        PauseTimer();   
+    }
+    else{
+        boxSliderId=idItem;
+    }
    for(i=0;i<4;i++){
     if (i==idItem){
     menuItem[i].classList.add('active-item');
@@ -50,6 +60,7 @@ function changeMenuItem(idItem){
         menuItem[i].classList.remove('active-item');
         menuLabel[i].classList.remove('active-label');
     }
+    
    }
 }
 
@@ -62,12 +73,12 @@ function togglePhone(){
     
 }
 
-function compPost(){
+// function compPost(){
     
-    var cCont = document.getElementById('container-complect');
-    cCont.classList.toggle('active');
+//     var cCont = document.getElementById('container-complect');
+//     cCont.classList.toggle('active');
   
-}
+// }
 
 var sliderInputs =  document.getElementsByName('slider-sm');
 
@@ -89,22 +100,50 @@ function prevSlide(){
      }
 }
 
+function boxSlider(){
 
-// function toggleMainMenu(){
-    
-//     var menu = document.getElementById('menu-active');
-//     menu.classList.toggle('active');
-   
+}
+function animSliders(){
+    nextSlide();
+     boxSliderId = boxSliderId<3?boxSliderId+1:0;
+    changeMenuItem(boxSliderId);
+}
+var intervalID = window.setInterval(animSliders, 5000);
 
-// }
 
-// $(window).scroll(function(){
-//     if ($(this).scrollTop() == 0) {
-//         navTop.style.background  = "transparent";
-//         console.log("верх")
-//     }
-//     else {
-//         navTop.style.background  = "#3a3a3a";
-//         console.log("неВерх")
-//     }
-//   });
+function PauseTimer(){
+    clearInterval(intervalID);
+    setTimeout(() => intervalID = window.setInterval(animSliders, 5000), 10000);
+}
+
+
+$("#callme1").click(function() { // ID откуда кливаем
+    $('html, body').animate({
+        scrollTop: ($(".hgo1").offset().top - 100)  // класс объекта к которому приезжаем
+    }, 1000); // Скорость прокрутки
+});
+$("#callme2").click(function() { // ID откуда кливаем
+    $('html, body').animate({
+        scrollTop: ($(".hgo2").offset().top - 100)  // класс объекта к которому приезжаем
+    }, 1000); // Скорость прокрутки
+});
+$("#callme3").click(function() { // ID откуда кливаем
+    $('html, body').animate({
+        scrollTop: ($(".hgo3").offset().top - 100)  // класс объекта к которому приезжаем
+    }, 1000); // Скорость прокрутки
+});
+$("#callme4").click(function() { // ID откуда кливаем
+    $('html, body').animate({
+        scrollTop: ($(".hgo4").offset().top - 100)  // класс объекта к которому приезжаем
+    }, 1000); // Скорость прокрутки
+});
+$("#callme5").click(function() { // ID откуда кливаем
+    $('html, body').animate({
+        scrollTop:( $(".hgo5").offset().top - 100)  // класс объекта к которому приезжаем
+    }, 1000); // Скорость прокрутки
+});
+$("#callme6").click(function() { // ID откуда кливаем
+    $('html, body').animate({
+        scrollTop: $(".footer").offset().top  // класс объекта к которому приезжаем
+    }, 1000); // Скорость прокрутки
+});

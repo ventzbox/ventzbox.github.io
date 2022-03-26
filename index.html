@@ -16,10 +16,11 @@
 
     
     <title>VentzBox</title>
+
     <link rel="shortcut icon" href="resources/mpic.png" type="image/x-icon">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
           <span></span>
           <span></span>
       </div>
-        <h2>Оставьте заявку</h2>
+        <h2 >Оставьте заявку</h2>
         <p> Заполните поля формы и наши специалисты свяжутся с вами в ближайшее время.</p>
 
         <div class="form__group">
@@ -76,10 +77,14 @@
             </div>
             <!-- <span>меню</span> -->
             <div id="activemenu">
-                <div class="topics"><a href="./pages/contacts/index.html">Каталог</a></div>
-                <div class="topics"><a href="./pages/contacts/index.html">Контакты</a></div>
-                <div class="topics"><a href="./pages/contacts/index.html">О компании</a></div>
-                <div class="topics"><a href="./pages/contacts/index.html">Сертификаты</a></div>
+                <div class="topics" id="callme1"><a   href="#">Наши преимущества</a></div>
+                <div class="topics" id="callme2"><a   href="#">Стоимость решений</a></div>
+                <div class="topics" id="callme3"><a   href="#">Выберите щит для управления</a></div>
+             
+                <div class="topics" id="callme4"><a   href="#">Классификация щитов управления</a></div>
+                <div class="topics" id="callme5"><a   href="#">Комплект поставки</a></div>
+                <div class="topics" id="callme6"><a   href="#">Контакты</a></div>
+              
             </div>
         
         
@@ -1140,7 +1145,7 @@
             <!-- /* бренды v */ -->
             <div class="slider" id="mouseSlide">
                 <div class="slide-track">
-                    <div class="slide">
+                    <!-- <div class="slide">
                         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250"
                             alt="" />
                     </div>
@@ -1195,6 +1200,57 @@
                     <div class="slide">
                         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250"
                             alt="" />
+                    </div> -->
+
+
+                    <div class="slide">
+                        <img src="brands/brand1.png" height="100" width="250"alt="" />
+                    </div>
+                    <div class="slide">
+                     </div>
+                    <div class="slide">
+                         <img src="brands/brand2.png" height="100" width="250"alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="brands/brand3.png" height="100" width="250"alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="brands/brand4.png" height="100" width="250"alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="brands/brand5.png" height="100" width="250"alt="" />
+                    </div>  <div class="slide">
+                        <img src="brands/brand1.png" height="100" width="250"alt="" />
+                    </div>
+                    <div class="slide">
+                     </div>
+                    <div class="slide">
+                         <img src="brands/brand2.png" height="100" width="250"alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="brands/brand3.png" height="100" width="250"alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="brands/brand4.png" height="100" width="250"alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="brands/brand5.png" height="100" width="250"alt="" />
+                    </div>  <div class="slide">
+                        <img src="brands/brand1.png" height="100" width="250"alt="" />
+                    </div>
+                    <div class="slide">
+                     </div>
+                    <div class="slide">
+                         <img src="brands/brand2.png" height="100" width="250"alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="brands/brand3.png" height="100" width="250"alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="brands/brand4.png" height="100" width="250"alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="brands/brand5.png" height="100" width="250"alt="" />
                     </div>
                 </div>
             </div>
@@ -1202,7 +1258,7 @@
             <!-- /* бренды ^ */ -->
             <!--Наши преимущества v -->
             <div class="advanteges">
-                <h2>Наши преимущества</h2>
+                <h2 class="hgo1">Наши преимущества</h2>
                 <div class="web-4blocks">
                   
                     <div class="advanteges-block">
@@ -1221,39 +1277,27 @@
                     <div class="advanteges-block">
                         <div class="adv-incon"><img src="resources/ad_icon2.png" alt=""></div>
                         <div class="adv-text">
-                            <h3>Индивидуальные решения</h3>
+                            <h3>Документация</h3>
                             <span>
-                                Наша команда - это специалисты, имеющие многолетний опыт в автоматизации систем
-                                вентиляции.
-                                Инженеры разработают щит управления под ваши задачи, а производственный отдел реализует
-                                этот
-                                проект точно в срок.
+                                Мы подготавливаем полный комплект документации, чтоб у Вас не возникало вопросов в процессе запуска и эксплуатаци оборудования.
                             </span>
                         </div>
                     </div>
                     <div class="advanteges-block">
                         <div class="adv-incon"><img src="resources/ad_icon3.png" alt=""></div>
                         <div class="adv-text">
-                            <h3>Индивидуальные решения</h3>
+                            <h3>Гарантийные обязательства</h3>
                             <span>
-                                Наша команда - это специалисты, имеющие многолетний опыт в автоматизации систем
-                                вентиляции.
-                                Инженеры разработают щит управления под ваши задачи, а производственный отдел реализует
-                                этот
-                                проект точно в срок.
+                                Мы уверены в качестве нашей продукци, поэтому на все изготавлеваемое оборудование предоставляем гарантию 1 год и техническую поддержку.
                             </span>
                         </div>
                     </div>
                     <div class="advanteges-block">
                         <div class="adv-incon"><img src="resources/ad_icon4.png" alt=""></div>
                         <div class="adv-text">
-                            <h3>Индивидуальные решения</h3>
+                            <h3>Оперативная доставка по РФ</h3>
                             <span>
-                                Наша команда - это специалисты, имеющие многолетний опыт в автоматизации систем
-                                вентиляции.
-                                Инженеры разработают щит управления под ваши задачи, а производственный отдел реализует
-                                этот
-                                проект точно в срок.
+                                Для удобства работы с покупателями из регионов России, наша компания сотрудничает с ведущими транспортными компаниями.
                             </span>
                         </div>
                     </div>
@@ -1263,7 +1307,7 @@
             <!-- Наши преимущества ^ -->
             <!-- Стоимость решений v-->
             <div class="price">
-                <h2>Стоимость решений</h2>
+                <h2 class="hgo2">Стоимость решений</h2>
 
 
                 <div class="container">
@@ -1275,49 +1319,50 @@
                     <input type="radio" name="slider-sm" id="item-2">
                     <input type="radio" name="slider-sm" id="item-3">
                     <div class="cards">
-                        <label class="card" for="item-1" id="song-1">
+                        <label class="card" for="item-1" id="song-1" onclick="PauseTimer()"> 
                             <!-- <img src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80" alt="song"> -->
                             <!-- <img src="resources/pic1.png" alt="song"> -->
                             <div class="price-list">
                                 <h3>БАЗОВЫЙ</h3>
-                                <span class="price-text">от 14900<i class="fas fa-ruble-sign"></i></span>
+                                <span class="price-text">от 99999<i class="fas fa-ruble-sign"></i></span>
                                 <ul class="price-advant">
-                                    <li>Низкая стоимость</li>
-                                    <li>Релейно-контактная схема</li>
-                                    <li>Комплектующие Texenergo</li>
-                                    <li>Металлический корпус</li>
-                                    <li>Простота монтажа и обслуживания</li>
-                                    <li>Оперативность изготовления</li>
+                                    <li>Низкая стоимость.</li>
+                                    <li>Релейно-контактная схема.</li>
+                                    <li>Комплектующие Texenergo.</li>
+                                    <li>Металлический корпус.</li>
+                                    <li>Простота монтажа и обслуживания.</li>
+                                    <li>Оперативность изготовления.</li>
                                 </ul>
                                 <button class="btn-more" onclick="togglePhone()">Подробнее</button>
                             </div>
                         </label>
-                        <label class="card" for="item-2" id="song-2">
+                        <label class="card" for="item-2" id="song-2" onclick="PauseTimer()">
                             <div class="price-list">
-                                <h3>НЕ БАЗОВЫЙ</h3>
-                                <span class="price-text">от 14900<i class="fas fa-ruble-sign"></i></span>
+                                <h3>СТАНДАРТ</h3>
+                                <span class="price-text">от 99999<i class="fas fa-ruble-sign"></i></span>
                                 <ul class="price-advant">
-                                    <li>Низкая стоимость</li>
-                                    <li>Релейно-контактная схема</li>
-                                    <li>Комплектующие Texenergo</li>
-                                    <li>Металлический корпус</li>
-                                    <li>Простота монтажа и обслуживания</li>
-                                    <li>Оперативность изготовления</li>
+                                    <li>Пластиковый корпус IP 65.</li>
+                                    <li>Контроллер Segnetics.</li>
+                                    <li>Высокая функциональность.</li>
+                                    <li>Простота монтажа.</li>
+                                    <li>Обширный функционал.</li>
+                                    <li>Возможность системы диспетчеризации.</li>
+                                    <li>Оперативность изготовление.</li>
                                 </ul>
                                 <button class="btn-more" onclick="togglePhone()">Подробнее</button>
                             </div>
                         </label>
-                        <label class="card" for="item-3" id="song-3">
+                        <label class="card" for="item-3" id="song-3" onclick="PauseTimer()">
                             <div class="price-list">
-                                <h3>Совсем не БАЗОВЫЙ</h3>
-                                <span class="price-text">от 14900<i class="fas fa-ruble-sign"></i></span>
+                                <h3>В МЕТАЛЛЕ</h3>
+                                <span class="price-text">от 99999<i class="fas fa-ruble-sign"></i></span>
                                 <ul class="price-advant">
-                                    <li>Низкая стоимость</li>
-                                    <li>Релейно-контактная схема</li>
-                                    <li>Комплектующие Texenergo</li>
-                                    <li>Металлический корпус</li>
-                                    <li>Простота монтажа и обслуживания</li>
-                                    <li>Оперативность изготовления</li>
+                                    <li>Металлический корпус.</li>
+                                    <li>Контроллер Segnetics.</li>
+                                    <li>Высокая функциональность.</li>
+                                    <li>Простота монтажа.</li>
+                                    <li>Обширный функционал.</li>
+                                    <li>Возможность системы диспетчеризации.</li>
                                 </ul>
                                 <button class="btn-more" onclick="togglePhone()">Подробнее</button>
                             </div>
@@ -1332,18 +1377,18 @@
 
             <!-- Выберите щит для управления: v-->
             <div class="container-menu">
-                <h2>Выберите щит для управления</h2>
+                <h2 class="hgo3">Выберите щит для управления</h2>
                 <div class="crsl">
                     <div class="left-menu">
                         <div class="polzunok" id="polzunok"></div>
-                        <div class="menu-variant" onclick="changeMenuItem(0)">
+                        <div class="menu-variant" onclick="changeMenuItem(0)" >
                             <label class="menu-label m1" for="Вентиляторами ПДВ (Вытяжными)">Вентиляторами ПДВ
                                 (Вытяжными)</label>
                         </div>
-                        <div class="menu-variant" onclick="changeMenuItem(1)">
+                        <div class="menu-variant" onclick="changeMenuItem(1)" >
                             <label class="menu-label m2" for="">Вентиляторами ПДВ (Приточными)</label>
                         </div>
-                        <div class="menu-variant" onclick="changeMenuItem(2)">
+                        <div class="menu-variant" onclick="changeMenuItem(2)" >
                             <label class="menu-label m3" for="">Системами ПДВ с электронагревателем</label>
                         </div>
                         <div class="menu-variant" onclick="changeMenuItem(3)">
@@ -1354,54 +1399,14 @@
                         <div class="menu-content">
                             <div class="img"><img src="resources/item1.png" alt=""></div>
                             <div class="text">
-                                <span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi recusandae quia
-                                    repellendus iure voluptate asperiores laborum debitis omnis quos. Quidem, ducimus
-                                    illum
-                                    cumque eius deleniti optio, inventore cupiditate laboriosam nihil exercitationem
-                                    reprehenderit unde dolorum minus nulla expedita earum vel iusto ab magni odit
-                                    distinctio
-                                    nemo aut tempore. Tempora consequatur incidunt inventore numquam magnam eaque
-                                    laboriosam, beatae laudantium quis! Exercitationem, repellendus, corporis laudantium
-                                    doloremque voluptatibus debitis earum iure modi maxime quibusdam adipisci libero
-                                    commodi
-                                    non totam! Rerum reiciendis ad necessitatibus consectetur fuga dignissimos
-                                    perspiciatis
-                                    delectus aliquid, ipsa eius non animi possimus optio repellat? Officiis quod iure
-                                    nihil
-                                    quibusdam, maxime a natus minima neque quisquam quidem dolores, ducimus atque.
-                                    Voluptatibus, possimus nihil, eaque quis facere ipsa delectus nostrum tempore
-                                    blanditiis
-                                    deserunt eum placeat. Cum labore non mollitia qui reiciendis deserunt, quaerat
-                                    aliquid
-                                    ut veritatis corrupti esse provident aspernatur odit numquam suscipit nam! Debitis
-                                    vel
+                                <span> Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. 
                                 </span>
                             </div>
                         </div>
                         <div class="menu-content">
                             <div class="img"><img src="resources/item2.png" alt=""></div>
                             <div class="text">
-                                <span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi recusandae quia
-                                    repellendus iure voluptate asperiores laborum debitis omnis quos. Quidem, ducimus
-                                    illum
-                                    cumque eius deleniti optio, inventore cupiditate laboriosam nihil exercitationem
-                                    reprehenderit unde dolorum minus nulla expedita earum vel iusto ab magni odit
-                                    distinctio
-                                    nemo aut tempore. Tempora consequatur incidunt inventore numquam magnam eaque
-                                    laboriosam, beatae laudantium quis! Exercitationem, repellendus, corporis laudantium
-                                    doloremque voluptatibus debitis earum iure modi maxime quibusdam adipisci libero
-                                    commodi
-                                    non totam! Rerum reiciendis ad necessitatibus consectetur fuga dignissimos
-                                    perspiciatis
-                                    delectus aliquid, ipsa eius non animi possimus optio repellat? Officiis quod iure
-                                    nihil
-                                    quibusdam, maxime a natus minima neque quisquam quidem dolores, ducimus atque.
-                                    Voluptatibus, possimus nihil, eaque quis facere ipsa delectus nostrum tempore
-                                    blanditiis
-                                    deserunt eum placeat. Cum labore non mollitia qui reiciendis deserunt, quaerat
-                                    aliquid
-                                    ut veritatis corrupti esse provident aspernatur odit numquam suscipit nam! Debitis
-                                    vel
+                                <span> Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. 
                                 </span>
                             </div>
 
@@ -1409,57 +1414,14 @@
                         <div class="menu-content">
                             <div class="img"><img src="resources/item3.png" alt=""></div>
                             <div class="text">
-                                <span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi recusandae quia
-                                    repellendus iure voluptate asperiores laborum debitis omnis quos. Quidem, ducimus
-                                    illum
-                                    cumque eius deleniti optio, inventore cupiditate laboriosam nihil exercitationem
-                                    reprehenderit unde dolorum minus nulla expedita earum vel iusto ab magni odit
-                                    distinctio
-                                    nemo aut tempore. Tempora consequatur incidunt inventore numquam magnam eaque
-                                    laboriosam, beatae laudantium quis! Exercitationem, repellendus, corporis laudantium
-                                    doloremque voluptatibus debitis earum iure modi maxime quibusdam adipisci libero
-                                    commodi
-                                    non totam! Rerum reiciendis ad necessitatibus consectetur fuga dignissimos
-                                    perspiciatis
-                                    delectus aliquid, ipsa eius non animi possimus optio repellat? Officiis quod iure
-                                    nihil
-                                    quibusdam, maxime a natus minima neque quisquam quidem dolores, ducimus atque.
-                                    Voluptatibus, possimus nihil, eaque quis facere ipsa delectus nostrum tempore
-                                    blanditiis
-                                    deserunt eum placeat. Cum labore non mollitia qui reiciendis deserunt, quaerat
-                                    aliquid
-                                    ut veritatis corrupti esse provident aspernatur odit numquam suscipit nam! Debitis
-                                    vel
+                                <span> Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. 
                                 </span>
                             </div>
                         </div>
                         <div class="menu-content">
                             <div class="img"><img src="resources/item4.png" alt=""></div>
                             <div class="text">
-                                <span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi recusandae quia
-                                    repellendus iure voluptate asperiores laborum debitis omnis quos. Quidem, ducimus
-                                    illum
-                                    cumque eius deleniti optio, inventore cupiditate laboriosam nihil exercitationem
-                                    reprehenderit unde dolorum minus nulla expedita earum vel iusto ab magni odit
-                                    distinctio
-                                    nemo aut tempore. Tempora consequatur incidunt inventore numquam magnam eaque
-                                    laboriosam, beatae laudantium quis! Exercitationem, repellendus, corporis laudantium
-                                    doloremque voluptatibus debitis earum iure modi maxime quibusdam adipisci libero
-                                    commodi
-                                    non totam! Rerum reiciendis ad necessitatibus consectetur fuga dignissimos
-                                    perspiciatis
-                                    delectus aliquid, ipsa eius non animi possimus optio repellat? Officiis quod iure
-                                    nihil
-                                    quibusdam, maxime a natus minima neque quisquam quidem dolores, ducimus atque.
-                                    Voluptatibus, possimus nihil, eaque quis facere ipsa delectus nostrum tempore
-                                    blanditiis
-                                    deserunt eum placeat. Cum labore non mollitia qui reiciendis deserunt, quaerat
-                                    aliquid
-                                    ut veritatis corrupti esse provident aspernatur odit numquam suscipit nam! Debitis
-                                    vel
-                                    corrupti perspiciatis molestias id harum autem repellat, odit est aliquam ea
-                                    doloremque
-                                    iusto aperiam fugiat provident velit eos quos odio deserunt adipisci pariatur vitae
+                                <span> Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. Предназначен для управления системы удаления воздуха в автоматическом, дистанционном и ручном режимах. Обеспечивает пуск, защиту и контроль работы системы. Является неотъемлемой частью противопожарной системы в зданиях. 
                                 </span>
                             </div>
                         </div>
@@ -1473,7 +1435,7 @@
             <!-- Таблица -->
             <table class="table">
 
-                <h3 class="tabel-h">Классификация щитов управления</h3>
+                <h3 class="tabel-h hgo4" >Классификация щитов управления</h3>
 
                 <tbody>
                     <tr>
@@ -1599,7 +1561,7 @@
 
             </div>
             <!-- Комплект поставки v  -->
-            <h2 onclick="compPost()">Комплект поставки</h2>
+            <h2 class="hgo5">Комплект поставки</h2>
             <div class="container-complect" id="container-complect">
                 <br>
                 <br>
@@ -1673,7 +1635,7 @@
                         </a>
                         <br>
                         <br>
-                          <span class="fot-span"> © 2022. Все права защищены</span> 
+                          <span class="fot-span"> © 2022 Все права защищены.</span> 
                     </div>
                 </div>
             </div>
