@@ -119,7 +119,7 @@ function PauseTimer(){
 
 $("#callme1").click(function() { // ID откуда кливаем
     $('html, body').animate({
-        scrollTop: ($(".hgo1").offset().top - 100)  // класс объекта к которому приезжаем
+        scrollTop: ($(".hgo1").offset().top - 230)  // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
 });
 $("#callme2").click(function() { // ID откуда кливаем
