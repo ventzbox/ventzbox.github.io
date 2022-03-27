@@ -267,25 +267,34 @@ align-items: center;
 flex-direction: column;
 box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 cursor: pointer;
-
+animation: phone-glow 10s infinite;
 }
-ion-icon{
-  /* color: #fd0202; */
-  
-  /* background: red; */
-}
+.phone-container:hover{animation: phone-anim 1s infinite;}
 
-
-
-ion-icon:hover{
-  /* color: #fd0202; */
-  
-  /* background: red; */
-  
-
+/* ion-icon:hover{
 animation: phone-anim 1s infinite;
-}
+} */
 
+@keyframes phone-glow {
+  0% {
+  
+  }
+  20% {
+    box-shadow: 0px 0px 10px 1px rgb(165, 165, 165);
+  }
+  
+  40% {
+    box-shadow:none;
+  }
+  60% {
+    box-shadow: 0px 0px 10px 1px rgb(172, 172, 172);
+  }
+  100%{
+   
+    box-shadow:none;
+  }
+  
+  }
 @keyframes phone-anim {
 0% {
 
@@ -1745,45 +1754,94 @@ margin-top: 75px;
 }
 
 }
- /* @media (max-width: 1400px){
-  .main{
-    width: 100%;
-    left: 0;
-    
-  }
- 
-  #bg-sec{
-    display: none;
-  }
-  .video{
- 
-    min-width: 100%;
-}
-#video-background{
-  
-    min-width: 100%;
-}
-.video-shadow div{
-  
-    min-width: 100%;
 
-}
 
-.video-shadow{
-  min-width: 100%;
-}
-.card-container {
-height: 1000px;
-  flex-wrap: wrap;
-}
+/* Позвоните нам */
 
-.br-mob{
+.call-me-plz{
+  position: fixed;
+  bottom: 3%;
+  right: 7%;
+
+  width: 160px;
+  /* width: 700px; */
+  height: 80px;
+  background: #303030;
+  z-index: 2;
+  /* opacity: .9; */
+  display: flex;
+  text-align: right;
+/* justify-content: center; */
+align-items: center;
+  border-radius: 75px;
+  color: transparent;
+}
+.call-me-plz span{
+  /* color: transparent; */
+  font-size: 16px;
+  height: 75px;
+  width: 80%;
   display: block;
+  padding-left: 25px;
+  line-height: 75px;
+
+  margin-left: 50px;
 }
-.card-p{
- width: 30%;
+
+@keyframes showBox {
+  0% {
+   
+  }
+  
+  95% {
+    width: 160px;
+   
+  }
+  99%{
+    color: transparent;
+  }
+  100%{
+    width: 700px;
+    color: white;
+   
+  }  
+  }
+
+
+
+
+.call-me-plz span::before{
+  line-height: 75px;
+  content: "";
+display: block;
+position: absolute;
+margin-left: -75px;
+width: 80px;
+height: 80px;
+background-image: url("resources/mpic2.png");
+background-position: center;
+background-size: 75% 75%;
+background-repeat: no-repeat;
+
 }
-.card-p:not(:first-child) {
-  margin-left: 0px;
+
+.cmp-phone{
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  color: #fff;
 }
-}  */
+
+@media (min-width: 900px) {  
+  .call-me-plz{
+  width: 160px;animation: showBox 10s forwards;}
+}
+@media (max-width: 900px) {
+  .call-me-plz span{
+    width: 0;
+    color: transparent;
+  }
+  .call-me-plz{
+    width: 160px;
+  }
+}
