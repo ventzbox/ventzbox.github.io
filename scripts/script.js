@@ -112,13 +112,12 @@ function animSliders(){
      boxSliderId = boxSliderId<3?boxSliderId+1:0;
     changeMenuItem(boxSliderId);
 }
-var intervalID = window.setInterval(animSliders, 5000);
+var intervalID = window.setInterval(animSliders, 7000);
 
-
-function PauseTimer(){
-    clearInterval(intervalID);
-    setTimeout(() => intervalID = window.setInterval(animSliders, 5000), 10000);
-}
+// function PauseTimer(){
+//     clearInterval(intervalID);
+//     setTimeout(() => intervalID = window.setInterval(animSliders, 5000), 10000);
+// }
 
 
 $("#callme1").click(function() { // ID откуда кливаем
