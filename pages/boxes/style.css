@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
+
+
+
+
 *{
  margin: 0;
  padding: 0;
@@ -10,7 +14,7 @@ font-family: PFDinDisplayPro;
 }
 @font-face {
   font-family: PFDinDisplayPro; 
-  src: url("resources/PF\ DinDisplay\ Pro\ Regular.ttf "); 
+  src: url("../../resources/PF\ DinDisplay\ Pro\ Regular.ttf"); 
 }
 
 .main-menu{
@@ -802,6 +806,9 @@ background-repeat: no-repeat;
   .call-me-plz{
     width: 160px;
   }
+  .resize-picture img{
+    width: 100%;
+  }
 }
 
 .resize-picture{
@@ -809,5 +816,6 @@ background-repeat: no-repeat;
   resize: both;
   padding: 5px;
   position: relative;
+  
   /* background: #C0392B; */
 }
