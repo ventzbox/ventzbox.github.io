@@ -1225,14 +1225,13 @@ width: 100%;
   font-size:1vw;
   transition: 0.5s;
 cursor: pointer;
-
-
 }
 
 /* .table td a{
 text-decoration: none;
 color: inherit;
 } */
+
 .table td:hover{
   border: none;
   scale: 0.9;
