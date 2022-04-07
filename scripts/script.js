@@ -48,11 +48,9 @@ menuLabel[0].classList.add('active-label');
 var boxSliderId=0;
 function changeMenuItem(idItem){
 
-    if(boxSliderId!=idItem){
-     }
-    else{
+   
         boxSliderId=idItem;
-    }
+    
    for(i=0;i<4;i++){
     if (i==idItem){
     menuItem[i].classList.add('active-item');
