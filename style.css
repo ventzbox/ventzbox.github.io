@@ -1214,7 +1214,9 @@ width: 100%;
 #table1{
   border-bottom: #fd0202 3px solid;
 }
-
+#tabel2{
+  cursor: pointer;
+}
 
 .table td{
 	padding: 5px 10px;
@@ -1224,7 +1226,7 @@ width: 100%;
 	text-align: center;
   font-size:1vw;
   transition: 0.5s;
-cursor: pointer;
+
 }
 
 /* .table td a{
@@ -1232,7 +1234,7 @@ text-decoration: none;
 color: inherit;
 } */
 
-.table td:hover{
+#table2 td:hover{
   border: none;
   scale: 0.9;
   box-shadow: 9px 6px #ff4d4d, -9px -6px #cf1818;

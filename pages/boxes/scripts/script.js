@@ -14,6 +14,76 @@ const navTop = document.getElementById('navigator');
        
 //     }}
 // }
+
+var someStr = location.search.split("box=");
+var catalogType = 0;
+if (someStr.length == 2 && someStr[1] == "0") {
+    catalogType = 0;
+}
+else if (someStr.length == 2 && someStr[1] == "20") {
+    catalogType = 20;
+}
+else if (someStr.length == 2 && someStr[1] == "1") {
+    catalogType = 1;
+}
+else if (someStr.length == 2 && someStr[1] == "10") {
+    catalogType = 10;
+}
+
+else if (someStr.length == 2 && someStr[1] == "2") {
+    catalogType = 2;
+}
+else
+{ catalogType = -1;
+}
+console.log(catalogType);
+var box0 = document.getElementById('box0');
+var box1 = document.getElementById('box1');
+var box2 = document.getElementById('box2');
+
+
+
+switch(catalogType){
+    case 0:
+        box0.style.display = 'block';
+        box1.style.display = 'none';
+        box2.style.display = 'none';
+        break;
+    case 1:
+        box0.style.display = 'none';
+        box1.style.display = 'block';
+        box2.style.display = 'none';
+        break;
+    case 2:
+        box0.style.display = 'none';
+        box1.style.display = 'none';
+        box2.style.display = 'block';   
+        break; 
+    case 10:
+        box0.style.display = 'none';
+        box1.style.display = 'block';
+        box2.style.display = 'block';   
+        break; 
+    case 20:
+        box0.style.display = 'block';
+        box1.style.display = 'none';
+        box2.style.display = 'none';    
+    break;
+    case -1:
+        box0.style.display = 'none';
+        box1.style.display = 'none';
+        box2.style.display = 'none';    
+    break;
+    default:
+        break;
+}
+
+
+
+
+
+
+
 const main = document.getElementById('main');
 // const mouseSlide = document.getElementById('mouseSlide');
 
