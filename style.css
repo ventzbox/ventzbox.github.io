@@ -130,6 +130,11 @@ height: 80px;
 .main-menu{
       display: inline-flex;
 }
+#bottom-topics{
+  position: fixed;
+  bottom: 15px;
+  width: 300px !important;
+}
 
 .menu-toggle {
     position: relative;
@@ -1944,7 +1949,7 @@ align-items: center;
 display: block;
 position: absolute;
 margin-left: -75px;
-width: 80px;
+width: 65px;
 height: 80px;
 background-image: url("resources/mpic2.png");
 background-position: center;
