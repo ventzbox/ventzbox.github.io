@@ -1244,12 +1244,12 @@ color: inherit;
   text-align: center;
   margin-bottom: 15PX;
 }
-.table tbody tr:nth-child(odd){
+.table tbody tr{
 	background: #fff;
 }
 
-.table tbody tr:nth-child(even){
-	background: #bbbbbb;
+.table tbody tr:first-child{
+	background: #fff;
 }
 @media (max-width: 900px) {
   .table {
