@@ -1206,10 +1206,13 @@ width: 100%;
 	table-layout: fixed;
 	width: 80%;
 	/* margin-bottom: 20px; */
-  border-bottom: #fd0202 3px solid;
-  margin: auto;
-  margin-bottom: 5PX;
   
+  margin: auto;
+  /* margin-bottom: 5PX; */
+  
+}
+#table1{
+  border-bottom: #fd0202 3px solid;
 }
 
 
@@ -1226,10 +1229,10 @@ cursor: pointer;
 
 }
 
-.table td a{
+/* .table td a{
 text-decoration: none;
 color: inherit;
-}
+} */
 .table td:hover{
   border: none;
   scale: 0.9;
@@ -1249,8 +1252,11 @@ color: inherit;
 }
 
 .table tbody tr:first-child{
-	background: #fff;
+	/* background: rgb(131, 131, 131); */
+  border-bottom:#fd0202 3px solid; ;
 }
+
+
 @media (max-width: 900px) {
   .table {
     width: 100%;
