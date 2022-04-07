@@ -49,8 +49,7 @@ var boxSliderId=0;
 function changeMenuItem(idItem){
 
     if(boxSliderId!=idItem){
-        PauseTimer();   
-    }
+     }
     else{
         boxSliderId=idItem;
     }
