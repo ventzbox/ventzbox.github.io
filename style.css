@@ -762,15 +762,15 @@ justify-content: center;
 align-items: center;
 }
 
-.adv-incon{    
+.preim-incon{    
   margin-right: 10px;
   padding-right : 10px;
     flex: 0 0 69px;
 }
-.adv-text span{
+.preim-text span{
     font-size: 18px;
 }
-.adv-text h3{
+.preim-text h3{
     font-size: 24px;
  color: rgb(193, 58, 44);
  margin-top: 10px;
