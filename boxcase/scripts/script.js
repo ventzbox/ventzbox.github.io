@@ -2,6 +2,9 @@ const toolTip =document.querySelector('.tooltip');
 const popupBG =document.querySelector('.info__bg');
 const popup =document.querySelector('.info');
 const zones = document.querySelectorAll('.interactive-zone');
+
+const zoneT = document.querySelectorAll('.zone-text');
+const zoneL = document.querySelectorAll('.zone-line');
 // alert(zones.length)
 zones.forEach(zone =>{
 
@@ -19,9 +22,28 @@ zones.forEach(zone =>{
     });
     zone.addEventListener('mouseenter', function(){
         toolTip.style.display = "block"
+        // zoneT.style.display ="none";
+        // zoneL.style.display ="none";
+        
+        zones.forEach((zone1, index)=>{
+            if(this.dataset.idl!=index){
+            zoneT[index].classList.add('inactive');
+            zoneL[index].classList.add('inactive');
+            // zoneT[index].style.display ="none";
+            // zoneL[index].style.display ="none";
+            }
+            else{
+                zoneT[index].classList.remove('inactive');
+                zoneL[index].classList.remove('inactive');
+            }
+        });
     });
     zone.addEventListener('mouseleave', function(){
         toolTip.style.display = "none"
+        zones.forEach((zone1, index)=>{
+            zoneT[index].classList.remove('inactive');
+            zoneL[index].classList.remove('inactive');
+        });
     });
 })
 
