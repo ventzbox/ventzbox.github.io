@@ -197,7 +197,7 @@ box-shadow:  0 0 0 150vh #eee;
   position: absolute;
   top: 20px;
   left: 30px;
-  font-size: 10px;
+  font-size: 16px;
   display: block;
   transition: 0.5s;
 
@@ -206,81 +206,81 @@ box-shadow:  0 0 0 150vh #eee;
 }
 .zone-text h3{
 /* font-weight: bolder; */
-  width: 150px;
+  width:250px;
 }
 .zone-text p{
   width: 150px;
   
 }
 #zt1{
-  top: 250px;
-  left: 30px;
+  top: 295px;
+  left: 22px;
   display: block;
 }
 
 #zt2{
-  top: 30px;
-  left: 30px;
+  top: 116px;
+  left: 22px;
   display: block;
 }
 #zt3{
-  top: 15px;
-  left: 230px;
+  top: 50px;
+  left: 260px;
   display: block;
 }
 #zt4{
-  top: 15px;
-  left: 415px;
+  top: 750px;
+  left: 41px;
   display: block;
 }
 #zt5{
-  top: 80px;
-  left: 615px;
+  top: 95px;
+  left: 535px;
   display: block;
 }
 #zt6{
-  top: 190px;
-  left: 615px;
+  top: 210px;
+  left: 645px;
   display: block;
 }
 #zt7{
-  top: 405px;
-  left: 615px;
+  top: 418px;
+  left: 645px;
   display: block;
 }
 #zt8{
-  top: 534px;
-  left: 40px;
+  top: 478px;
+  left: 22px;
   display: block;
 }
 #zt9{
-  top: 685px;
-  left: 40px;
+  top: 637px;
+  left: 28px;
   display: block;
 }
 
 #zt10{
-  top: 700px;
-  left: 270px;
+  top: 708px;
+  left: 311px;
   display: block;
 }
 
 #zt11{
-  top: 680px;
-  left: 425px;
+  top: 787px;
+  left: 389px;
   display: block;
 }
 
 
 #zt12{
-  top: 700px;
-  left: 585px;
+  top: 745px;
+  left: 656px;
   display: block;
 }
 
 #zt13{
-  top: 560px;
-  left: 625px;
+  top: 598px;
+  left: 618px;
   display: block;
 }
 .zone-text.inactive{
