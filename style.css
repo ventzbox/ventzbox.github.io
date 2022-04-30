@@ -2264,3 +2264,13 @@ z-index: 10000000000000;
 opacity: 0;
   transition: 0.7s;
 }
+
+
+@media (max-width: 1200px) {
+  .main-container-b{
+    display: none;
+  }
+  .clip-box{
+    display: none;
+  }
+}
