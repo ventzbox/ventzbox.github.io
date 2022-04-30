@@ -2267,10 +2267,8 @@ opacity: 0;
 
 
 @media (max-width: 1200px) {
-  .main-container-b{
+  .main-container-bp{
     display: none;
   }
-  .clip-box{
-    display: none;
-  }
+ 
 }
