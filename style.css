@@ -1978,3 +1978,289 @@ background-repeat: no-repeat;
     width: 160px;
   }
 }
+
+/* интерактивная залупа */
+.main-container-bp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.btn{
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.btn .play{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: #eee;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 15px 25px #00000034;
+  transition: 0.5s;
+}
+.btn.active .play{
+box-shadow:  0 0 0 1000vh #eee;
+z-index: 10000000000000;
+/* position: relative; */
+}
+.btn .play::before{
+  content: '';
+  position: absolute;
+  border: 25px solid #fff;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 0px solid transparent;
+  transform: translateX(5px);
+}
+.btn p{
+  font-weight: 500;
+  font-size: 1em;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.clip-box{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transition: 0.5s;
+  z-index: 10000000000001;
+}
+.clip-box.active{
+  transform: translate(-50%,-50%) scale(1);
+  
+}
+.clip-box .content-box{
+  position: relative;
+  width: 800px;
+  height: 920px;
+  /* border: 1px solid #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clip-box .close-bc{
+  user-select: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgb(143, 33, 33);
+}
+.content-box .bg-box{
+  width: 800px;
+  height: 920px;
+}
+.content-box svg{
+  position: absolute;
+
+  width: 800px;
+  height: 920px;
+}
+.interactive-zone{
+  position: relative;
+  fill: none;
+  stroke: rgba(17, 17, 17, 0.075);
+  stroke-width: 3px;
+  cursor: pointer;
+  
+  pointer-events: all;
+}
+.interactive-zone:hover
+{
+  z-index: 100;
+  animation: highlightZone 2s linear infinite;
+}
+
+@keyframes highlightZone {
+  0%{
+    stroke: #111;
+  }
+  50%{
+    stroke: #ff0000;
+  }
+  100%{
+    stroke: #111;
+  }
+}
+/* .svg-lines{
+  position: absolute;
+  left: calc( (100% - 590px) / 2);
+  top: 0;
+  z-index: 10;
+} */
+.tooltip{
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 5px;
+  background:#fff ;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  display: none;
+}
+
+
+.info__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: 0.5s all;
+  pointer-events: none;
+  z-index: 10;
+}
+.info__bg.active {
+  pointer-events: all;
+  opacity: 1;
+  transition: 0.3s all;
+}
+.info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.zone-line{
+
+  fill: none;
+  stroke: rgb(255, 53, 53);
+  stroke-width: 2px;
+
+  fill:none;
+  stroke-linecap:round;
+  stroke-linejoin:miter;
+  stroke-opacity:1;
+  stroke-miterlimit:4;
+  stroke-dasharray:none;
+  transition: 0.5s;
+  /* marker-start:url(#Arrow1Lstart); */
+}
+.zone-text{
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 16px;
+  display: block;
+  transition: 0.5s;
+
+
+  display: none;
+}
+.zone-text h3{
+/* font-weight: bolder; */
+  width:250px;
+}
+.zone-text p{
+  width: 150px;
+  
+}
+#zt1{
+  top: 295px;
+  left: 22px;
+  display: block;
+}
+
+#zt2{
+  top: 116px;
+  left: 22px;
+  display: block;
+}
+#zt3{
+  top: 50px;
+  left: 260px;
+  display: block;
+}
+#zt4{
+  top: 750px;
+  left: 41px;
+  display: block;
+}
+#zt5{
+  top: 95px;
+  left: 535px;
+  display: block;
+}
+#zt6{
+  top: 210px;
+  left: 645px;
+  display: block;
+}
+#zt7{
+  top: 418px;
+  left: 645px;
+  display: block;
+}
+#zt8{
+  top: 478px;
+  left: 22px;
+  display: block;
+}
+#zt9{
+  top: 637px;
+  left: 28px;
+  display: block;
+}
+
+#zt10{
+  top: 708px;
+  left: 311px;
+  display: block;
+}
+
+#zt11{
+  top: 787px;
+  left: 389px;
+  display: block;
+}
+
+
+#zt12{
+  top: 745px;
+  left: 656px;
+  display: block;
+}
+
+#zt13{
+  top: 598px;
+  left: 618px;
+  display: block;
+}
+.zone-text.inactive{
+  opacity: 0;
+  transition: 0.7s;
+}
+.zone-line.inactive{
+opacity: 0;
+  transition: 0.7s;
+}
