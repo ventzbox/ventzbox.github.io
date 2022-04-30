@@ -2180,6 +2180,7 @@ z-index: 10000000000000;
 .zone-text h3{
 /* font-weight: bolder; */
   width:250px;
+  font-family: 'Poppins', sans-serif;
 }
 .zone-text p{
   width: 150px;
