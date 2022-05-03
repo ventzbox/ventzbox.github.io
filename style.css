@@ -1985,6 +1985,7 @@ background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
   min-height: 60vh;
+  min-height: 400px;
 }
 .btn{
   position: relative;
