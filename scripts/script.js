@@ -2,7 +2,17 @@
 const navTop = document.getElementById('navigator');
 
 
+
+let manuActive = document.getElementById('activemenu')
+let menuToggle = document.querySelector('.menu-toggle')
+    menuToggle.onclick = function () {
+        menuToggle.classList.toggle('active');
+        manuActive.classList.toggle('active');
+    }
+
 window.onscroll = function () {
+    menuToggle.classList.remove('active');
+    manuActive.classList.remove('active');
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
    if(screen.width>900){
     if (scrolled === 0) {
@@ -16,6 +26,11 @@ window.onscroll = function () {
 }
 const main = document.getElementById('main');
 // const mouseSlide = document.getElementById('mouseSlide');
+
+
+
+
+
 
 function mouseSlider(){
    

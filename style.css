@@ -87,6 +87,7 @@ align-items: center;
   align-items: center;
   z-index: -1;
   transition: 1s;
+  animation: hideMenu 1s;
 }
 
 #activemenu.active{
@@ -110,6 +111,24 @@ align-items: center;
     transform: rotate(0deg)
   }  
   }
+  @keyframes hideMenu {
+    0% { transform: rotate(0deg)
+      
+    }
+    20% {
+      transform: rotate(-5deg);
+      transform: translateX(-50px) ;
+    }
+    
+    60% {
+      transform:translateX(-150px) ;
+      transform: rotate(5deg);
+    }
+    100%{
+      transform:translateX(-300px) ;
+     
+    }  
+    }
 
 
 #activemenu .topics{
@@ -2203,8 +2222,8 @@ z-index: 10000000000000;
   display: block;
 }
 #zt4{
-  top: 750px;
-  left: 41px;
+  top: 20px;
+  left: 506px;
   display: block;
 }
 #zt5{
@@ -2234,15 +2253,15 @@ z-index: 10000000000000;
 }
 
 #zt10{
-  top: 708px;
-  left: 311px;
+  top: 728px;
+  left: 243px;
   display: block;
 }
 
 #zt11{
-  top: 787px;
-  left: 389px;
-  display: block;
+  top: 815px;
+left: 407px;
+display: block;
 }
 
 
