@@ -188,11 +188,16 @@ function toggleCtrlCase(){
     boxCase.classList.remove('active');
     cbCont.classList.add('active');
     
+    if(!ctrlCase.classList.contains('active')){
+        cbCont.classList.remove('active');
+    }
    
 }
 function toggleBoxCase(){
     boxCase.classList.toggle('active');
     ctrlCase.classList.remove('active');
     cbCont.classList.add('active');
-
+    if(!boxCase.classList.contains('active')){
+        cbCont.classList.remove('active');
+    }
 }
