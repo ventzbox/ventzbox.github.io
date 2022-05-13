@@ -1357,7 +1357,7 @@ color: #fff;
 .clipbox-container{
   height: 120px;
   position: relative;
-  margin: auto;
+  /* margin: auto; */
   transition: 1s;
   overflow: hidden;
 }

@@ -24,7 +24,7 @@ zones.forEach((zone, izIndex) =>{
         popupBG.classList.add('active');
     });
  
-    zone.addEventListener('mousemove', function(e ){
+    zone.addEventListener('mousemove', function(e){
        toolTip.innerText = this.dataset.title;
        toolTip.style.top = (e.y+15)+'px'
        toolTip.style.left = (e.x +15)+'px'
