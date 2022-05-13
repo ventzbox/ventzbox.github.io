@@ -1300,7 +1300,7 @@ color: inherit;
 
 
 
-/* #dwnld-pdf{
+/* .prt-btn-slide{
   height: 100px;
   width: 400px;
   background: #C0392B;
@@ -1309,12 +1309,12 @@ color: inherit;
   color: #fff;
   line-height: 100px;
 } */
-#dwnld-pdf i{
+.prt-btn-slide i{
 font-weight:900 ;
 color: #fff;
 }
 
-#dwnld-pdf  {
+.prt-btn-slide  {
   font-size: 18px;
   margin: auto;
   text-decoration:none;
@@ -1329,61 +1329,101 @@ color: #fff;
 	box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
 	background: #e62222;
   margin-bottom: 80px;
+
+  transition: 1s;
 }
 
-#dwnld-pdf , #dwnld-pdf  span {
+.prt-btn-slide , .prt-btn-slide  span {
 	transition: 200ms;
 }
 
-#dwnld-pdf  .text {
+.prt-btn-slide  .text {
 	transform: translateX(35px);
 	color: white;
 	font-weight: bold;
 }
 
-#dwnld-pdf  .icon {
+.prt-btn-slide  .icon {
 	position: absolute;
 	border-left: 1px solid #c41b1b;
 	transform: translateX(240px);
 	height: 40px;
 	width: 40px;
+  
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-
-
-
-#dwnld-pdf:hover {
-	background: #ff3636;
+.clipbox-container{
+  height: 120px;
+  position: relative;
+  margin: auto;
+  transition: 1s;
+  overflow: hidden;
+}
+.clipbox-container.active{
+  height: 920px;
+}
+#boxCaseB{
+  position: absolute;
+  transform: translateY(-500px) scale(0.5);
+  opacity: 0;
+}
+#CtrlCaseB{
+  
+  position: absolute;
+  transform: translateY(-500px) scale(0.5);
+  opacity: 0;
+}
+#boxCaseB.active{
+  transform: translateY(0px) scale(1);
+  opacity: 1;
+}
+#CtrlCaseB.active{
+  opacity: 1;
+  transform: translateY(0px) scale(1);
 }
 
-#dwnld-pdf .text::after{
+.prt-btn-slide:hover {
+	background: #ff3636;
+}
+#prtb1 .text::after{
+  content: "\f552";
+}
+#prtb2 .text::after{
+  content: "\f5fc";
+}
+.prt-btn-slide .text::after{
   font-family: 'Font Awesome\ 5 Free';
- content: "\f1c1";
- font-weight: 900;
+  font-weight: 900;
  font-size: 18px;
  margin-left: 5px;
 
  /* color: rgb(255, 255, 255); */
 }
-#dwnld-pdf .text:hover::after{
+.prt-btn-slide .text:hover::after{
   color: transparent;
 }
-#dwnld-pdf:hover .text{
+.prt-btn-slide:hover .text{
 	color: transparent;
 }
 
 
 
-#dwnld-pdf:hover .icon {
+.prt-btn-slide:hover .icon {
 	width: 300px;
 	border-left: none;
 	transform: translateX(0);
 }
 
-#dwnld-pdf:focus {
+.prt-btn-slide:focus {
 	outline: none;
+}
+
+.btns-in-center{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* Таблицы ^*/
@@ -2049,23 +2089,21 @@ z-index: 10000000000000;
   letter-spacing: 4px;
 }
 .clip-box{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%) scale(0);
+  position: relative;
+margin-bottom: 60px;
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%,-50%) scale(0); */
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  /* z-index: 10; */
   transition: 0.5s;
-  z-index: 10000000000001;
+  /* z-index: 10000000000001; */
 }
-.clip-box.active{
-  transform: translate(-50%,-50%) scale(1);
-  
-}
+
 .clip-box .content-box{
   position: relative;
   width: 800px;
@@ -2111,6 +2149,21 @@ z-index: 10000000000000;
   animation: highlightZone 2s linear infinite;
 }
 
+.interactive-zone2{
+  position: relative;
+  fill: none;
+  stroke: rgba(17, 17, 17, 0.075);
+  stroke-width: 3px;
+  cursor: pointer;
+  
+  pointer-events: all;
+}
+.interactive-zone2:hover
+{
+  z-index: 100;
+  animation: highlightZone 2s linear infinite;
+}
+
 @keyframes highlightZone {
   0%{
     stroke: #111;
@@ -2129,7 +2182,7 @@ z-index: 10000000000000;
   z-index: 10;
 } */
 .tooltip{
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   padding: 5px;
@@ -2138,6 +2191,17 @@ z-index: 10000000000000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
   display: none;
 }
+.tooltip2{
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 5px;
+  background:#fff ;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  display: none;
+}
+
 
 
 .info__bg {
@@ -2292,3 +2356,64 @@ opacity: 0;
   }
  
 }
+
+
+
+#ztCtrl1{
+  top: 220px;
+left: 84px;
+  display: block;
+}
+
+#ztCtrl2{
+  top: 90px;
+  left: 205px;
+  display: block;
+}
+#ztCtrl3{
+  top: 118px;
+  left: 486px;
+  display: block;
+}
+#ztCtrl4{
+  top: 230px;
+left: 634px;
+  display: block;
+}
+#ztCtrl5{
+  top: 407px;
+  left: 622px;
+  display: block;
+}
+#ztCtrl6{
+  top: 765px;
+left: 425px;
+  display: block;
+}
+#ztCtrl7{
+  top: 658px;
+  left: 673px;
+  display: block;
+}
+#ztCtrl8{
+  top: 795px;
+left: 110px;
+  display: block;
+}
+#ztCtrl9{
+  top: 665px;
+  left: 88px;
+  display: block;
+}
+
+#ztCtrl10{
+  top: 395px;
+left: 87px;
+  display: block;
+}
+.zone-text.smallt h3{
+  width: 148px;
+}
+
+
+
